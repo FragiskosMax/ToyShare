@@ -97,18 +97,18 @@
 
     .cta a {
         display: inline-block;
-        background-color: #2c3e50; /* Classic dark blue for buttons */
+        background-color: #ff8000; /* Classic dark blue for buttons */
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
         transition: background-color 0.3s ease, transform 0.3s ease;
         padding: 15px 30px; /* Larger padding for emphasis */
         font-size: 1.2rem;
-        border: 2px solid #2c3e50; /* Add a classic border */
+        border: 2px solid #8f5800; /* Add a classic border */
     }
 
     .cta a:hover {
-        background-color: #34495e; /* Slightly darker blue */
+        background-color: #d4801b; /* Slightly darker blue */
         transform: scale(1.05); /* Slight scale effect for classic button feel */
     }
 
@@ -130,6 +130,22 @@
         letter-spacing: 1px; /* Add some letter spacing for a vintage effect */
         font-size: 1.5rem; /* Slightly smaller for body text */
         line-height: 1.8; /* Improve readability */
+    }
+
+    .shop-btn, .cta-btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #2c3e50; /* Classic dark blue */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .shop-btn:hover, .cta-btn:hover {
+        background-color: #34495e; /* Slightly darker blue */
+        transform: scale(1.05);
     }
 
     /* Features Section */
@@ -174,7 +190,7 @@
     footer {
         text-align: center;
         padding: 20px;
-        background-color: #2c3e50;
+        background-color: #e67e22;
         color: #fff;
         font-size: 1rem;
     }
