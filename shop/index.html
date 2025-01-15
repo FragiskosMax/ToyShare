@@ -3,23 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToyShare Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ToyShare eShop</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
-        <h1>Welcome to the ToyShare Shop</h1>
-        <a href="/" class="back-home">Back to Home</a>
+        <img src="logo.png" alt="ToyShare Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#features">Shop</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
     </header>
-    <section id="products">
-        <h2>Our Toy Collection</h2>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Toy 1">
-            <h3>Toy 1</h3>
-            <p>$5/day</p>
-            <button>Add to Cart</button>
-        </div>
-        <!-- Add more products -->
+
+    <!-- Search Bar Section -->
+    <section class="search-bar">
+        <input type="text" id="search" placeholder="Search for toys..." onkeyup="searchProducts()">
     </section>
+
+    <section id="features" class="features">
+        <div class="feature" data-name="Mazescape">
+            <img src="mze.jpg" alt="Mazescape">
+            <h3>Mazescape</h3>
+            <p>Mazescape, the solitaire game with labyrinths that defy logic.</p>
+            <p>Price: €9.99/Week</p>
+            <button class="add-to-cart" data-id="1" data-name="Mazescape" data-price="9.99">Add to Cart</button>
+        </div>
+        <div class="feature" data-name="Super Mario Bros. Wonder">
+            <img src="smbw.jpeg" alt="Super Mario Bros. Wonder">
+            <h3>Super Mario Bros. Wonder</h3>
+            <p>Classic Mario gameplay is turned on its head with the addition of Wonder Flowers in the Super Mario Bros. Wonder game.</p>
+            <p>Price: €19.99/Week</p>
+            <button class="add-to-cart" data-id="2" data-name="Super Mario Bros. Wonder" data-price="19.99">Add to Cart</button>
+        </div>
+        <div class="feature" data-name="Hali Gali">
+            <img src="hg.jpg" alt="Hali Gali">
+            <h3>Hali Gali</h3>
+            <p>Flip cards to reveal fruits. Spot five of a kind? Ring the bell first to win!</p>
+            <p>Price: €4.99/Week</p>
+            <button class="add-to-cart" data-id="3" data-name="Hali Gali" data-price="4.99">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ToyShare. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:support@toyshare.com">support@toyshare.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
